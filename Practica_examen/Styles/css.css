@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #AFEEEE;
+}
+
+.Cabecera{
+    background-color: #95b8f6;
+    color: #E0FFFF;
+    padding: 15px;
+    text-align: center;
+}
+
+.navegacion{
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    min-height: 100vh;
+}
+
+@media(min-width: 1200px){
+    .navegacion{
+        grid-template-columns: 200px 1fr 1fr;
+    }
+}
+
+.menu{
+    background-color: #B0E0E6;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu ul{
+    list-style: none;
+    padding: 0;
+    direction: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+}
+
+.menu li{
+    color: black;
+    cursor: pointer;
+}
+
+.princiapl{
+    padding: 20px;
+}
+
+.tarjetas{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+
+}
+
+.productos{
+    background-color: white;
+    padding: 30px;
+    flex: 1;
+    min-width: 150px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.productos:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+
+footer{
+    background-color: #95b8f6;
+    color: #E0FFFF;
+    padding: 15px;
+    text-align: center;
+}
