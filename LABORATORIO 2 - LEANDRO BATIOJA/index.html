@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos/styles.css">
+    <title>Formulario de contacto</title>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Formulario de Registro</h1>
+        <p>Complete el siguiente formulario con sus datos personales</p>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <section>
+            <h2>Formulario de Contacto</h2>
+
+            <form action="#">
+                <fieldset>
+                    <legend>Datos Personales</legend>
+
+                    <label for="nombre">Nombre:</label><br>
+                    <input id="nombre" type="text" placeholder="Nombre completo" required><br><br>
+
+                    <label for="correo">Correo:</label><br>
+                    <input id="correo" type="email" placeholder="nombre@correo.com" required><br><br>
+
+                    <label for="edad">Edad:</label><br>
+                    <input id="edad" type="number" placeholder="Edad" required min="18" max="125"><br><br>
+
+                    <label for="Fecha_nacimiento">Nacimiento:</label><br>
+                    <input id="Fecha_nacimiento" type="date" min="1900-01-01" max="2008-12-31" required><br><br>
+
+                    <label for="phone">Teléfono:</label><br>
+                    <input id="phone" type="tel" placeholder="(+593) 999 999 9999" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Información Académica</legend>
+                    <label for="Carrera">Carrera:</label><br>
+                    <select name="Carrera" id="Carrera" required>
+                        <option value="">Seleccione...</option>
+                        <option value="TIC">TIC</option>
+                        <option value="Medicina">Medicina</option>
+                        <option value="Derecho">Derecho</option>
+                        <option value="Psicologia">Psicología</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferencias</legend>
+
+                    <p>Modalidad de Estudio:</p>
+                    <input type="radio" name="modalidad" id="presencial" required>
+                    <label for="presencial">Presencial</label><br>
+
+                    <input type="radio" name="modalidad" id="virtual" required>
+                    <label for="virtual">Virtual</label><br><br>
+
+                    <input type="checkbox" name="condiciones" id="condiciones" required>
+                    <label for="condiciones">Acepto términos y condiciones</label><br><br>
+
+                    <label for="documento">Subir Hoja de Vida (PDF):</label><br>
+                    <input type="file" id="documento" accept="application/pdf" required>
+
+                    <!--Agregacion del Textarea-->
+                    <label for="coments">Comentario adicional</label>
+                    <textarea id="coments" placeholder="Escriba aqui su comentario adicional...!"></textarea>
+                </fieldset>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 - Leandro Batioja Mena</p>
+        <p>Contacto: lsbatioja@pucese.edu.ec</p>
+    </footer>
+
+</body>
+</html>

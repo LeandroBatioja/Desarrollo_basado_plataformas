@@ -1,0 +1,71 @@
+body {
+    font-family: 'Segoe UI', sans-serif; /*3 actividad*/
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+header, footer {
+    background-color: #0f766e; /*1 actividad*/
+    color: rgb(244, 244, 244);
+    padding: 50px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    background-color: #e0f2fe; /*4 actividad*/
+}
+
+section {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 40px;
+    box-shadow: 0 4px rgba(0, 0, 0, 1); /*10 actividad*/
+}
+
+h2 {
+    color: #003366;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, select, textarea {
+    width: 97%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 8px; /*7 actividad*/
+    border: 1px solid #cbd5e1; /*8 actividad*/
+    font-family: inherit;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f97316; /*2 actividad*/
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /*9 actividad*/
+}
+
+
+button:focus, input:focus {
+  outline: 3px solid rgb(0, 255, 102);
+  outline-offset: 2px;
+}
+
+
+button:hover {
+    background-color: #e1690e;
+}
+
+#usuarios p {
+    background-color: #eef;
+    padding: 8px;
+    margin: 5px 0;
+}
+

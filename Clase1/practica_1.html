@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 1</title>
+</head>
+<body>
+
+    <h1>Registro de Estudiantes - TIC<br></h1>
+
+    <h3>Datos Personales</h3>
+
+    <section id="contact">
+        <h2>Contacto</h2>
+        <form action="#">
+            <label for="name">Nombre: <br></label>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="name">Apellido: <br></label>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="name">Edad: <br></label>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="name">Correo Electronico: <br></label>
+            <input type="email" id="name" name="name">
+
+        </form><br>
+    </section>
+
+    <h3>Informacion Academica</h3>
+    <section id="information">
+        <form action="#">
+            <label for="name">Curso: <br></label>
+            <select name="Carreras" id="cursos">
+                <option value="1er">1er TIC</option>
+                <option value="2do">2do TIC</option>
+                <option value="3ero">3ero TIC</option>
+                <option value="4to">4to TIC</option>
+            </select>
+        </form><br>
+
+        <label for="select">Paralelo:</label>
+        <form action="#">
+            <input type="radio" name="opcion1" id="Paralelos">
+            <label for="opcion1">A</label>
+            <input type="radio" name="opcion2" id="Paralelos">
+            <label for="opcion2">B</label>
+            <input type="radio" name="opcion3" id="Paralelos">
+            <label for="opcion3">C</label>
+        </form>
+    </section><br>
+    
+    <h3>Lenguaje de Interes</h3>
+    <section id="Interes">
+        <form action="#">
+        <input type="checkbox" name="HTML" id="HTML">
+        <label for="HTML">HTML</label><br>
+
+        <input type="checkbox" name="CSS" id="CSS">
+        <label for="CSS">CSS</label><br>
+
+        <input type="checkbox" name="JavaScript" id="JavaScript">
+        <label for="JavaScript">JavaScript</label><br>
+        </form>
+        
+    </section><br>
+
+    <h3>Comentarios</h3>
+    <section id="comments">
+        <form action="#">
+            <textarea name="comentario" placeholder="Escribe tu comentario aquí..."></textarea>
+            <br>
+        </form>
+    </section><br>
+
+    <button type="submit" class="btn-enviar">Enviar</button>
+</body>
+</html>
