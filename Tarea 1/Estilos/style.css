@@ -79,6 +79,7 @@ body{
 /*3.- Efecto Hover sin cambinar el tamaño*/
 .card:hover{
     background-color: #f0f8ff; /*Realizamos un cambio sutil en el color*/
+    transform: translateY(-10px);
     box-shadow: 0 8px 16px rgb(0, 0, 0, 0.2); /*Colocamos una sombra mas profunda*/
     cursor: pointer;
 }
