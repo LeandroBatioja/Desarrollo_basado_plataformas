@@ -19,6 +19,8 @@ body{
     text-align: center;
 }
 
+C:\Users\Estudiante\Videos\Desarrollo_basado_plataformas\PARA MAÑANA EN EL EXAMEN
+
 /*1.- Layout base con 2 columnas por defecto*/
 .layout{
     display: grid;
