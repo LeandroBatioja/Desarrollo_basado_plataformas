@@ -5,12 +5,17 @@ async function cargarPeliculas() {
         const respuesta = await fetch(URL);
         peliculasGlobal = await respuesta.json();
         mostrarPeliculas(peliculasGlobal);
-
 }
 
 function mostrarPeliculas(peliculas) {
     const contenedor = document.getElementById("contenedor");
+    const contador = document.getElementById("contador")
+
+    /*1.- Limpiamos el contador*/
     contenedor.innerHTML = "";
+
+    /*2.- Actualizar el numero del contador (basado en el array)*/ 
+    contador.textContent = peliculas.length;
 
     peliculas.forEach(pelicula => {
         contenedor.innerHTML += `
