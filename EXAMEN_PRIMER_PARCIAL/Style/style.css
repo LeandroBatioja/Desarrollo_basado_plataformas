@@ -1,0 +1,139 @@
+/*
+    Nota: 
+        En el codigo HTML se encontrara con dos clases que digan "Oopciones"
+        y "opciones", la que diga "Opciones" es para la barra de navegacion y
+        la otra clase "opciones" son las tarjetas en donde estan las peliculas
+*/
+
+/* 1.- Estilos generales*/
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: blue;
+    color: #383838;
+}
+
+/*2.- Layout (Contenido)*/
+.Opciones{
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    min-height: 100vh;
+}
+.Encabezado, .pie_pagina{
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/*3.- Menu lateral*/
+.menu{
+    background-color: #004a99;
+    padding: 20px;
+}
+
+.menu ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.menu li:hover{
+    background-color: #002b55;
+    border-radius: 5px;
+}
+
+/*4.- Tarjetas*/
+.Contenido{
+    padding: 25px;
+}
+
+.Tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 48px;
+}
+
+.opciones{
+    background-color: white;
+    border-radius: 12px;
+    padding: 25px;
+    flex: 1;
+    min-width: 250px;
+    box-shadow: 0 4px 10px rgb(0, 0, 0, 0.1);
+    text-align: center;
+    line-height: 1.6;
+    transition: all 0.3s ease;
+}
+
+.opciones:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 10px rgb(0, 0, 0, 0.2);
+    border: 1px solid #004a99;
+}
+
+/*5.- Formulario*/
+.Contactos fieldset{
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 30px;
+    background-color: white;
+}
+input, select, textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button{
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: orangered;
+}
+
+button:focus, input:focus {
+  outline: 3px solid rgb(0, 255, 102);
+  outline-offset: 2px;
+}                   
+
+/*6.- Responsive*/
+@media (max-width: 768px) {
+    .Opciones{
+        grid-template-columns: 1fr;
+    }
+    .menu{
+        display: none;
+    }
+    .Tarjetas{
+        flex-direction: column;
+    }
+    .opciones{
+        width: 100px;
+    }
+}
