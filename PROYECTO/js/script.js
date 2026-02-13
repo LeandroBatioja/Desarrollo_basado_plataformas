@@ -24,7 +24,8 @@ function mostrarPeliculas(peliculas) {
                 <div class="card-content">
                     <h3>${pelicula.title}</h3>
                     <p>Director: ${pelicula.director}</p>
-                    <p>Año: ${pelicula.release_date}</p> 
+                    <p>Año: ${pelicula.release_date}</p>
+                    <button onclick="seleccionar(${seleccionar.id})"> Seleccionar </button>
                 </div>
             </div>
         `;
@@ -33,11 +34,14 @@ function mostrarPeliculas(peliculas) {
 
 function seleccionar(id) {
     const pelicula = peliculasGlobal.find(p => p.id === id);
-    if (pelicula) {
-        document.getElementById("titulo").value = pelicula.title;
-        document.getElementById("director").value = pelicula.director;
-        document.getElementById("anio").value = pelicula.release_date;
-    }
+    document.getElementById("titulo").value = pelicula.title;
+    document.getElementById("director").value = pelicula.director;
+    document.getElementById("anio").value = pelicula.release_date;
+    window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior:"smooth"
+    })
+
 }
 
 function buscar() {
@@ -47,5 +51,17 @@ function buscar() {
     );
     mostrarPeliculas(filtradas);
 }
+
+//Simular que se han guardado los datos
+document.getElementById("formulario").addEventListener("submit", function(e){
+    e.preventDefault();
+    const datos = {
+        titulo : document.getElementById("titulo").value,
+        director : document.getElementById ("director").value,
+        anio : document.getElementById("anio").value
+    };
+    console.log("Pelicula guardada", datos);
+    alert("Pelicula guardada correctamente");
+});
 
 cargarPeliculas();
