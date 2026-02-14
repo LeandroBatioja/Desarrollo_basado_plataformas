@@ -25,7 +25,7 @@ function mostrarPeliculas(peliculas) {
                     <h3>${pelicula.title}</h3>
                     <p>Director: ${pelicula.director}</p>
                     <p>Año: ${pelicula.release_date}</p>
-                    <button onclick="seleccionar(${seleccionar.id})"> Seleccionar </button>
+                    <button onclick="seleccionar('${pelicula.id}')"> Seleccionar </button>
                 </div>
             </div>
         `;
