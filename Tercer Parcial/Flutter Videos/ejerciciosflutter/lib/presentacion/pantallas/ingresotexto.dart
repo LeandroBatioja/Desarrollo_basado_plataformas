@@ -28,7 +28,6 @@ class _IngresotextoState extends State<Ingresotexto> {
     'Argentina', 
     'Perú', 
     'Chile',
-    'Argentina',
     'Ecuador'
     ];
 
